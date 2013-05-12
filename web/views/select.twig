@@ -1,0 +1,31 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+	<section id="select">
+		<h1>Chordy</h1>
+		<h2>A tiny app to help you with chord changes</h2>
+		<p>Select some chords you'd like to play</p>
+
+		<form id="chord-selector" method="post" action="/play">
+			<ul class="chords">
+				<li><label>A</label><input type="checkbox" name="chords[]" value="A" /></li>
+				<li><label>D</label><input type="checkbox" name="chords[]" value="D" /></li>
+				<li><label>E</label><input type="checkbox" name="chords[]" value="E" /></li>
+				<li><label>F</label><input type="checkbox" name="chords[]" value="F" /></li>
+			</ul>
+
+			<div class="select-container">
+				<p>How long between transfers</p>
+				<select name="interval">
+					<option value="1">1 second</option>
+					<option value="2">2 seconds</option>
+					<option value="3">3 seconds</option>
+					<option value="4">4 seconds</option>
+					<option value="5">5 seconds</option>
+				</select>
+			</div>
+
+			<input type="submit" value="Submit" />
+		</form>
+	</section>
+{% endblock %}

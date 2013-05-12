@@ -1,0 +1,14 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+	<section id="play">
+		<span id="timer"></span>
+		<div class="switcher">
+			<img id="chord" src="" />
+			<a href="/" id="stop">I'm done rocking.</a>
+		</div>
+
+		<span class="chords hide">{{ chords }}</span>
+		<span class="interval hide">{{ interval }}</span>
+	</section>
+{% endblock %}
