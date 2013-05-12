@@ -10,6 +10,8 @@
 *~
 *.sass-cache
  
+vendor
+
 # OS or Editor folders
 .DS_Store
 Thumbs.db

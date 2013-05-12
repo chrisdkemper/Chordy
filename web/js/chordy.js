@@ -1,7 +1,7 @@
 var Chordy = Chordy || {
 	count: 4,
 	counter: null,
-	prev: 0,
+	prev: null,
 
 	playinit : function () {
 		Chordy.countdowntrigger();
@@ -21,10 +21,23 @@ var Chordy = Chordy || {
 
 		$('#timer').text(Chordy.count);
 	},
+	rand: function(total) {
+		return Math.floor(Math.random() * total);
+	},
+	selectchord: function(total) {
+		i = Chordy.rand(total);
+		
+		if (i == Chordy.prev) {
+			Chordy.selectchord(total);
+		}
+
+		Chordy.prev = i;
+		return i;
+	},
 	play: function () {
 		var chord = $('#chord');
 		var chords = $.parseJSON($('.chords').text());
-		var item = chords[ Math.floor(Math.random() * chords.length) ];
+		var item = chords[ Chordy.selectchord(chords.length) ];
 
 		chord.attr('src', item);
 	},
