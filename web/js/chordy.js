@@ -42,7 +42,9 @@ var Chordy = Chordy || {
 		chord.attr('src', item);
 	},
 	loop: function () {
-		var interval = parseInt($('.interval').text(), 10) * 1000;
+		var interval = $('.interval').text() * 1000;
 		Chordy.counter = setInterval('Chordy.play()', interval);
 	}
+
+
 }
