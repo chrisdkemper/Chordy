@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		
-		<title>Chordy</title>
+	<head>		
+		<title>Chordy | By chrisdkemper</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link rel="apple-touch-icon-precomposed" href="/img/Icon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/Icon-72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/Icon@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/Icon-72@2x.png" />
+
 		<link href="/css/screen.css" rel="stylesheet" />
 	</head>
 	<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a class="about" href="#">About</a>
+					</li>
+				</ul>
+			</nav>
+			<h1><a href="/" title="Chordy">Chordy</a></h1>
+		</header>
+
 		{% block content %}{% endblock %}
+
+		<footer>
+			<a href="http://chrisdkemper.co.uk" title="chrisdkemper.co.uk" target="_blank"><img src="/img/me.png" alt="chrisdkemper.co.uk" /></a>
+
+			<hr />
+
+			<strong>A project by <a href="http://http://chrisdkemper.co.uk">chrisdkemper</a></strong>
+
+		</footer>
+
+		<!-- GitHub Ribbon -->
+
+			<a href="https://github.com/chrisdkemper/Chordy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+		<!-- /GitHub Ribbon -->
+
+		<!-- About copy -->
+
+			<div class="close" id="overlay">
+				<div id="overlay-inner">
+					<h2>About Chordy</h2>
+					<p>Chory is a tiny app created using Silex, jQuery and CSS3 to help with chord transitions.</p>
+					<p>It was created by <a href="http://chrisdkemper.co.uk">Chris Kemper</a> for a bit of fun, and, it's available on <a href="https://github.com/chrisdkemper/Chordy">GitHub</a>!</p>
+					<p>The font is called Lily Script One, by <a href="http://www.fontspace.com/julia-petretta/julia-petretta">Julia Petretta</a> which is available from <a href="http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Lily+Script+One%7COleo+Script" target="_blank">Google Fonts</a> and the chord diagrams were created by <a href="http://chrisdkemper.co.uk">Chris Kemper</a></p>
+					<a class="close" href="#">X</a>
+				</div>
+			</div>
+
+		<!-- /About copy -->
+
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/js/script.min.js"></script>
 	</body>

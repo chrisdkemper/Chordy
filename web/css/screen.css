@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -58,6 +59,237 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 8, ../sass/screen.scss */
+/* Ratios */
+/* line 1, ../sass/base.scss */
+html {
+  font-size: 12px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.61083em;
+  text-align: center; }
+
+/* line 8, ../sass/base.scss */
+p {
+  margin-bottom: 0.80542em; }
+
+/* line 1, ../sass/typography.scss */
+h1, h2 {
+  font-family: 'Lily Script One', Arial, serif;
+  font-size: 6em;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 20px; }
+  /* line 9, ../sass/typography.scss */
+  h1 a, h2 a {
+    color: #000;
+    display: block;
+    text-decoration: none; }
+
+/* line 16, ../sass/typography.scss */
+h2 {
+  font-size: 2em;
+  letter-spacing: 0;
+  margin-bottom: 15px; }
+
+/* line 22, ../sass/typography.scss */
+#timer {
+  font-family: 'Lily Script One', Arial, serif;
+  font-size: 16em;
+  line-height: 1em; }
+
+/* line 28, ../sass/typography.scss */
+a {
+  color: #0088cc; }
+
+/* line 1, ../sass/misc.scss */
 .hide {
   display: none; }
+
+/* line 1, ../sass/forms.scss */
+label {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.61083; }
+
+/* line 11, ../sass/forms.scss */
+input,
+textarea,
+select[multiple] {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.61083em 1em;
+  -webkit-box-shadow: 0.13922em 0.13922em 0.61083em rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 0.13922em 0.13922em 0.61083em rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0.13922em 0.13922em 0.61083em rgba(0, 0, 0, 0.6) inset;
+  -webkit-border-radius: 0.40271em 0.40271em;
+  -moz-border-radius: 0.40271em / 0.40271em;
+  border-radius: 0.40271em / 0.40271em; }
+  /* line 18, ../sass/forms.scss */
+  input:focus,
+  textarea:focus,
+  select[multiple]:focus {
+    outline: none; }
+  /* line 23, ../sass/forms.scss */
+  input[type='checkbox'], input[type='radio'],
+  textarea[type='checkbox'],
+  textarea[type='radio'],
+  select[multiple][type='checkbox'],
+  select[multiple][type='radio'] {
+    border: 1px solid #999;
+    width: 1.61083em;
+    height: 1.61083em;
+    padding: 1em; }
+    /* line 29, ../sass/forms.scss */
+    input[type='checkbox']:checked, input[type='radio']:checked,
+    textarea[type='checkbox']:checked,
+    textarea[type='radio']:checked,
+    select[multiple][type='checkbox']:checked,
+    select[multiple][type='radio']:checked {
+      background-color: #0088cc; }
+    /* line 34, ../sass/forms.scss */
+    input[type='checkbox'] + span, input[type='checkbox'] + p, input[type='radio'] + span, input[type='radio'] + p,
+    textarea[type='checkbox'] + span,
+    textarea[type='checkbox'] + p,
+    textarea[type='radio'] + span,
+    textarea[type='radio'] + p,
+    select[multiple][type='checkbox'] + span,
+    select[multiple][type='checkbox'] + p,
+    select[multiple][type='radio'] + span,
+    select[multiple][type='radio'] + p {
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline; }
+  /* line 39, ../sass/forms.scss */
+  input[type='submit'],
+  textarea[type='submit'],
+  select[multiple][type='submit'] {
+    background-color: #49a4db;
+    font-size: 1.2em;
+    color: #FFF;
+    border: none;
+    cursor: hand;
+    cursor: pointer; }
+
+/* line 52, ../sass/forms.scss */
+select,
+input[type='submit'] {
+  margin: 0.80542em 0; }
+
+/* line 1, ../sass/style.scss */
+header {
+  margin: 1.61083em auto 1.61083em;
+  max-width: 400px; }
+  /* line 5, ../sass/style.scss */
+  header nav {
+    margin-bottom: 1.61083em; }
+    /* line 8, ../sass/style.scss */
+    header nav li {
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline; }
+      /* line 11, ../sass/style.scss */
+      header nav li a {
+        color: #0088cc;
+        text-decoration: none; }
+
+/* line 19, ../sass/style.scss */
+section {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%; }
+  /* line 24, ../sass/style.scss */
+  section .chords {
+    margin: 0.80542em 0; }
+    /* line 27, ../sass/style.scss */
+    section .chords li {
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline; }
+  /* line 33, ../sass/style.scss */
+  section .switcher,
+  section #timer {
+    display: block;
+    min-height: 600px; }
+  /* line 38, ../sass/style.scss */
+  section .switcher {
+    display: none; }
+    /* line 42, ../sass/style.scss */
+    section .switcher img,
+    section .switcher a {
+      display: block; }
+
+/* line 48, ../sass/style.scss */
+footer {
+  margin: 3.22167em auto 1.61083em;
+  width: 250px; }
+  /* line 52, ../sass/style.scss */
+  footer strong {
+    color: #999;
+    display: block; }
+    /* line 56, ../sass/style.scss */
+    footer strong a {
+      color: #999;
+      text-decoration: none; }
+
+/* line 63, ../sass/style.scss */
+#overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  /* line 73, ../sass/style.scss */
+  #overlay #overlay-inner {
+    -webkit-border-radius: 0.80542em 0.80542em;
+    -moz-border-radius: 0.80542em / 0.80542em;
+    border-radius: 0.80542em / 0.80542em;
+    background: #fff;
+    border: 1px solid #999;
+    left: 50%;
+    margin-left: -11.61083em;
+    padding: 1.61083em;
+    position: relative;
+    top: 25%;
+    width: 20em;
+    z-index: 2; }
+    /* line 85, ../sass/style.scss */
+    #overlay #overlay-inner a.close {
+      -webkit-border-radius: 1.61083em 1.61083em;
+      -moz-border-radius: 1.61083em / 1.61083em;
+      border-radius: 1.61083em / 1.61083em;
+      background: #0088cc;
+      color: #fff;
+      font-size: 0.80542em;
+      height: 1.07389em;
+      line-height: 1.07389em;
+      padding: 0.53694em;
+      position: absolute;
+      right: 0.80542em;
+      text-align: center;
+      text-decoration: none;
+      top: 1.61083em;
+      width: 1.07389em; }

@@ -1,0 +1,101 @@
+header {
+	margin: $ratio + em auto $ratio + em;
+	max-width: 400px;
+
+	nav {
+		margin-bottom: $ratio + em;
+
+		li {
+			@include inline-block();
+
+			a {
+				color: $blue;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+section {
+	margin: 0 auto;
+	max-width: 400px;
+	width: 100%;
+
+	.chords {
+		margin: $ratio / 2 + em 0;
+
+		li {
+			@include inline-block();
+		}
+	}
+
+	.switcher,
+	#timer {
+		display: block;
+		min-height: 600px;
+	}
+
+	.switcher {
+		display: none;
+
+		img,
+		a {
+			display: block;
+		}
+	}
+}
+
+footer {
+	margin: $ratio * 2 + em auto $ratio + em;
+	width: 250px;
+
+	strong {
+		color: #999;
+		display: block;
+
+		a {
+			color: #999;
+			text-decoration: none;
+		}
+	}
+}
+
+#overlay {
+	background: rgba(0,0,0,0.6);
+	display: none;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	#overlay-inner {
+		@include border-radius($ratio / 2 + em, $ratio / 2 + em);
+		background: #fff;
+		border: 1px solid #999;
+		left: 50%;
+		margin-left: -(10 + $ratio) + em;
+		padding: $ratio + em;
+		position: relative;
+		top: 25%;
+		width: 20em;
+		z-index: 2;
+
+		a.close {
+			@include border-radius($ratio + em, $ratio + em);
+			background: $blue;
+			color: #fff;
+			font-size: $ratio / 2 + em;
+			height: $ratio / 1.5 + em;
+			line-height: $ratio / 1.5 + em;
+			padding: $ratio / 3 + em;
+			position: absolute;
+			right: $ratio / 2 + em;
+			text-align: center; 
+			text-decoration: none;
+			top: $ratio + em;
+			width: $ratio / 1.5 + em;
+		}
+	}
+}

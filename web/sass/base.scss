@@ -1,0 +1,10 @@
+html {
+	font-size: 12px;
+	font-family: helvetica, arial, sans-serif;
+	line-height: $ratio + em;
+	text-align: center;
+}
+
+p {
+	margin-bottom: $ratio / 2 + em;
+}

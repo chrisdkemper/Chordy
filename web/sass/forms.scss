@@ -1,0 +1,54 @@
+label{
+	@extend .text-overflow;
+	@include inline-block();
+	font-size: $font-fix;
+	font-weight: bold;
+	line-height: $ratio;
+}
+
+input,
+textarea,
+select[multiple]{
+	@include inline-block();
+	@include appearance(none);
+	padding: $ratio-inv + em 1em;
+	@include box-shadow(pow($ratio-inv, 4) + em pow($ratio-inv, 4) + em $ratio-inv + em rgba(0,0,0,0.6) inset);
+	@include border-radius($ratio / 4 + em, $ratio / 4 + em);
+
+	&:focus{
+		outline: none;
+	}
+
+	&[type='checkbox'],
+	&[type='radio']{
+		border: 1px solid #999;
+		width: $ratio + em;
+		height: $ratio + em;
+		padding: 1em;
+
+		&:checked{
+			background-color: $blue;
+		}
+
+		& + span,
+		& + p{
+			@include inline-block();
+		}
+	}
+
+	&[type='submit']{
+		background-color: $lightblue;
+		font-size: $font-fix;
+		color: #FFF;
+		border: none;
+		cursor: hand;
+		cursor: pointer;
+		//@include transition(#333 .4s);
+		//@include box-shadow(none);
+	}
+}
+
+select,
+input[type='submit'] {
+	margin: $ratio / 2 + em 0;
+}

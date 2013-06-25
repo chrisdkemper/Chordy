@@ -14,4 +14,21 @@ $(document).ready(function(){
 			
 		});
 	}
+
+	$('.about').on('click', function(){
+		$(this).addClass('active');
+		$('#overlay').show();
+
+		return false;
+	});
+
+	
+	$('.close').on('click', function(){
+		$('.about').removeClass('active');
+		$('#overlay').hide();
+
+		return false;
+	});
+	
+
 });

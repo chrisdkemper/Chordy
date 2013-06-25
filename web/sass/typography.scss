@@ -1,0 +1,30 @@
+h1, h2 { 
+	font-family: 'Lily Script One', Arial, serif; 
+	font-size: 6em;
+	letter-spacing: -2px;
+	line-height: 1;
+	//margin-bottom: $ratio + em; WTF
+	margin-bottom: 20px;
+
+	a {
+		color: #000;
+		display: block;
+		text-decoration: none;
+	}
+}
+
+h2 {
+	font-size: 2em;
+	letter-spacing: 0;
+	margin-bottom: 15px;
+}
+
+#timer {
+	font-family: 'Lily Script One', Arial, serif; 
+	font-size: 16em;
+	line-height: 1em;
+}
+
+a {
+	color: $blue;
+}

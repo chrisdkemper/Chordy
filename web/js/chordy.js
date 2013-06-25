@@ -14,6 +14,7 @@ var Chordy = Chordy || {
 		if (Chordy.count <= 0) {
 			clearInterval(Chordy.counter);
 			$('#timer').hide();
+			$('.switcher').show();
 
 			Chordy.loop();
 			return;
@@ -43,6 +44,7 @@ var Chordy = Chordy || {
 	},
 	loop: function () {
 		var interval = $('.interval').text() * 1000;
+		Chordy.play();
 		Chordy.counter = setInterval('Chordy.play()', interval);
 	}
 

@@ -6,6 +6,10 @@ use
 
 $app = include __DIR__ . '/../app/bootstrap.php';
 
+$app->error(function(\Exception $exception, $code) use ($app){
+	return $app->redirect('/');
+});
+
 $app->get('/', function() use ($app) {
     return $app['twig']->render('select.twig', array());
 });

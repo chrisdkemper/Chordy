@@ -2,20 +2,30 @@
 
 {% block content %}
 	<section id="select">
-		<h1>Chordy</h1>
-		<h2>A tiny app to help you with chord changes</h2>
 		<p>Select some chords you'd like to play</p>
 
 		<form id="chord-selector" method="post" action="/play">
+			<h2>Majors</h2>
 			<ul class="chords">
 				<li><label>A</label><input type="checkbox" name="chords[]" value="A" /></li>
-				<li><label>D</label><input type="checkbox" name="chords[]" value="D" /></li>
 				<li><label>E</label><input type="checkbox" name="chords[]" value="E" /></li>
+				<li><label>D</label><input type="checkbox" name="chords[]" value="D" /></li>
+				<li><label>G</label><input type="checkbox" name="chords[]" value="G" /></li>
+				<li><label>C</label><input type="checkbox" name="chords[]" value="C" /></li>
 				<li><label>F</label><input type="checkbox" name="chords[]" value="F" /></li>
+				<li><label>B</label><input type="checkbox" name="chords[]" value="B" /></li>
+			</ul>
+
+			<h2>Minors</h2>
+			<ul class="chords">
+				<li><label>A</label><input type="checkbox" name="chords[]" value="Am" /></li>
+				<li><label>D</label><input type="checkbox" name="chords[]" value="Dm" /></li>
+				<li><label>E</label><input type="checkbox" name="chords[]" value="Em" /></li>
+				<li><label>F</label><input type="checkbox" name="chords[]" value="Fm" /></li>
 			</ul>
 
 			<div class="select-container">
-				<p>How long between transfers</p>
+				<p>How long between transfers?</p>
 				<select name="interval">
 					<option value="0.5">0.5 seconds</option>
 					<option value="1">1 second</option>
@@ -26,7 +36,7 @@
 				</select>
 			</div>
 
-			<input type="submit" value="Submit" />
+			<input type="submit" value="Let's go!" />
 		</form>
 	</section>
 {% endblock %}
