@@ -6,11 +6,11 @@ This version is totally unstyled and still missing some enhancements, but it wor
 
 ##TODO
 
--	Fix some timing issues
--	Style the damn thing
+-	~~Fix some timing issues~~
+-	Style the damn thing - Kinda done
 -	~~Stop the same chord being shown twice in a row~~
 -	~~Put a check on the homepage to ensure more than one chord is selected~~
--	Add in chord groups that actually make sense
+-	~~Add in chord groups that actually make sense~~
 -	Add in the rest of the chord diagrams.
 
 If you have any suggestions, let me know.
